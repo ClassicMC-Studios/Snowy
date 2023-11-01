@@ -3,7 +3,6 @@
 > A faster alternative to regular HTML that compiles to regular HTML
 > <br/> File Extension *.smd*
 > <br/> Compiles into a flake.html file
-> <br/> Any line that doesn't start with **$** is a comment 
 
 |Commands|HTML equivilant|
 |-----------|-----------|
