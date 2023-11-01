@@ -4,6 +4,10 @@
 > <br/> File Extension *.smd*
 > <br/> Compiles into a flake.html file
 
+`$p`, `$-`, `$+`, all require `$l` to contain data
+
+`$a` requires `$.` to contain data
+
 |Commands|HTML equivilant|
 |-----------|-----------|
 |`$#`|`<h1></h1>`|
