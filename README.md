@@ -19,4 +19,3 @@
 |`$a`|`<a href="href"></a>`|
 |`$+`|`<img src="held class"/>`|
 
-![./proof.gif](Img)
