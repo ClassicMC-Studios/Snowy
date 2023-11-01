@@ -11,6 +11,7 @@
 |`$b`|`<br/>`|
 |`$=`|`<link rel="stylesheet" href=""/>`|
 |`$!`|`text`|
+|`$p`|`<p class="held class"></p>`|
 |`$%`|`Opens a <div> holds div class data`|
 |`$^`|`Closes a div </div>`|
 |`$l`|`(holds a class (IMG, Span*))`|
