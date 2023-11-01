@@ -1,4 +1,4 @@
-f = open("./example.smd", "r")
+f = open("./flake.smd", "r")
 endlines = []
 lines = []
 mode = ""
@@ -49,6 +49,11 @@ def span(l,hrf):
   dsus = lines[l].strip("$-")
   lines[l] = dsus
   endlines.append(f"<span class=\"{hrf}\">{(lines[l].rstrip("\n")).lstrip("$-")}</span>")
+def hehepp(l,hrf):
+  mode = "p"
+  dsus = lines[l].strip("$p")
+  lines[l] = dsus
+  endlines.append(f"<p class=\"{hrf}\">{(lines[l].rstrip("\n")).lstrip("$p")}</p>")
 def img(l,hrf):
   mode = "+"
   dsus = lines[l].strip("$+")
@@ -91,6 +96,9 @@ def generate():
       if elem == "-" and dolla ==1:
         dolla = 0
         span(i,classed)
+      if elem == "p" and dolla ==1:
+        dolla = 0
+        hehepp(i,classed)
       if elem == "l" and dolla == 1:
         dolla=0  
         dsus = lines[i].strip("$l")
