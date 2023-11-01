@@ -1,4 +1,4 @@
-f = open("./flake.smd", "r")
+f = open("./example.smd", "r")
 endlines = []
 lines = []
 mode = ""
