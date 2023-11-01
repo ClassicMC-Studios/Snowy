@@ -1,7 +1,6 @@
 $tSnowy
   --Styles--
-$=bc.css
-$=style.css
+$=https://classicmc-studios.github.io/bc.css
   --body--
 $%bc-text-align
 $#Snowy
