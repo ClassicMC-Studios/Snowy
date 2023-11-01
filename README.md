@@ -1,6 +1,6 @@
 # Snowy
 
-> A faster alternative to regular HTML that compiles to regular HTML
+> A static site generator that ships 0 JavaScript to the client ever.
 > <br/> File Extension *.smd*
 > <br/> Compiles into a flake.html file
 
