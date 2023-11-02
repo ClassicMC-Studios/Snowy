@@ -13,6 +13,7 @@
   width: 50%;
   height:100%;
   z-index: -1;
+  position: fixed;
 }
 .br{
   background-color: #262626;
@@ -22,6 +23,14 @@
   height:50%;
   width:50%;
   height:50%;
+  position: fixed;
+}
+.footer{
+  position: absolute;
+  bottom:0;
+  right:0;
+  font-style: italic;
+  color:rgba(255, 255, 255, 0.252);
 }
 .floater{
   text-align: center;
