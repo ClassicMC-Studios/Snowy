@@ -59,13 +59,19 @@ def img(l,hrf):
   dsus = lines[l].strip("$+")
   lines[l] = dsus
   endlines.append(f"<img class=\"{hrf}\" src=\"{(lines[l].rstrip("\n")).lstrip("$+")}\" alt=\"nobody\"/>")
+def bgcolor(l):
+  mode = "+"
+  dsus = lines[l].strip("$|")
+  lines[l] = dsus
+  endlines.append("<style>body{background-color:"+(lines[l].rstrip("\n")).lstrip("$|")+";}</style>")
 def generate():
   dolla = 0
   bolla = 0
   i=0
+  subi=0
   for line in lines:
     for elem in line:
-      if elem == "$":
+      if elem == "$" and subi==0:
         dolla = 1
       if elem == "#" and dolla == 1:
         header(i)
@@ -96,6 +102,9 @@ def generate():
       if elem == "-" and dolla ==1:
         dolla = 0
         span(i,classed)
+      if elem == "|" and dolla ==1:
+        dolla = 0
+        bgcolor(i)
       if elem == "p" and dolla ==1:
         dolla = 0
         hehepp(i,classed)
@@ -110,7 +119,9 @@ def generate():
       if elem == "+" and dolla == 1:
         dolla = 0
         img(i,classed)
+      subi +=1
     i+=1
+    subi=0
   z = 0
   for lo in endlines:
     if z==1:
