@@ -3,6 +3,7 @@
 > A static site generator that ships 0 JavaScript to the client ever.
 > <br/> File Extension *.smd*
 > <br/> Compiles into a flake.html file
+> <br/> Comments are declared with `*`
 
 `$p`, `$-`, `$+`, all require `$l` to contain data
 
