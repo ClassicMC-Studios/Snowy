@@ -1,0 +1,41 @@
+$tSnowy
+$=new.css
+$=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+$=bc.css
+$|#242424
+
+$%top
+$!&nbsp;
+$^
+$%br
+$!&nbsp;
+$^
+
+$%gridcont
+$%griditem
+$lh1
+$-SNOWY, THE MOST
+$%buckets h1 bc-text-bold
+$!STATIC SITE
+$^
+$b
+$-GENERATOR
+$^
+$%griditem
+$%floater bc-text-bold
+$%trs bc-hover-border bc-bdc-white bc-p-10 
+$ifa fa-file-text
+$!Zero Javascript Always
+$^
+$%trs bc-hover-border bc-bdc-white bc-p-10 
+$ifa fa-snowflake-o
+$!Simple, Concise, Fast
+$^
+$%trs bc-hover-border bc-bdc-white bc-p-10 
+$ifa fa-github 
+$.https://github.com/ClassicMC-Studios/snowy/
+$aGithub
+$^
+$^
+$^
+$^
