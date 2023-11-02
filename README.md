@@ -26,6 +26,8 @@
 |`$\|`|`Choose a background color $\|color`|
 |`$i`|`<i class="data"></i>`|
 
+[index.md is the main website](#dsus)
+
 [Example1 is a random test](#dsus)
 
 [Example2 is a recreation of TWF article1](#dsus)
