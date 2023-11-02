@@ -1,4 +1,4 @@
-# Snowy
+# Snowy 🌨️ 
 
 > A static site generator that ships 0 JavaScript to the client ever.
 > <br/> File Extension *.smd*
