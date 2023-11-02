@@ -23,6 +23,8 @@
 |`$.`|`(holds a href)`|
 |`$a`|`<a href="href"></a>`|
 |`$+`|`<img src="held class"/>`|
+|`$\|`|`Choose a background color $\|color`|
+|`$i`|`<i class="data"></i>`|
 
 [Example1 is a random test](#dsus)
 
