@@ -25,6 +25,7 @@
 |`$+`|`<img src="held class"/>`|
 |`$\|`|`Choose a background color $\|color`|
 |`$i`|`<i class="data"></i>`|
+|`$f`|`favicon href`|
 
 [index.md is the main website](#dsus)
 
