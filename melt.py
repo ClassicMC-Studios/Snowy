@@ -55,7 +55,7 @@ def hehepp(l,hrf):
   lines[l] = dsus
   endlines.append(f"<p class=\"{hrf}\">{(lines[l].rstrip("\n")).lstrip("$p")}</p>")
 def img(l,hrf):
-  mode = "+"
+  mode = "img"
   dsus = lines[l].strip("$+")
   lines[l] = dsus
   endlines.append(f"<img class=\"{hrf}\" src=\"{(lines[l].rstrip("\n")).lstrip("$+")}\" alt=\"nobody\"/>")
@@ -64,6 +64,11 @@ def bgcolor(l):
   dsus = lines[l].strip("$|")
   lines[l] = dsus
   endlines.append("<style>body{background-color:"+(lines[l].rstrip("\n")).lstrip("$|")+";}</style>")
+def insert(l):
+  mode = "i"
+  dsus = lines[l].strip("$i")
+  lines[l] = dsus
+  endlines.append(f"<i class=\"{(lines[l].rstrip("\n")).lstrip("$+")}\"></i>")
 def generate():
   dolla = 0
   bolla = 0
@@ -105,6 +110,9 @@ def generate():
       if elem == "|" and dolla ==1:
         dolla = 0
         bgcolor(i)
+      if elem == "i" and dolla ==1:
+        dolla = 0
+        insert(i)
       if elem == "p" and dolla ==1:
         dolla = 0
         hehepp(i,classed)
